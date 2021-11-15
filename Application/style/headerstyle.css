@@ -1,7 +1,5 @@
 header {
   width: 100%;
-  -webkit-box-shadow: 0px 2px 8px 0px black;
-          box-shadow: 0px 2px 8px 0px black;
   background-image: url("../assets/header.png");
   background-position: left;
   background-repeat: no-repeat;
@@ -27,10 +25,6 @@ header .title .h1 {
 }
 
 header .sticky {
-  background-image: url("../assets/header.png");
-  background-position: left;
-  background-repeat: no-repeat;
-  background-size: contain;
   background-color: black;
   position: fixed;
   top: 0;
@@ -43,6 +37,22 @@ header .navbar {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-shadow: 0px 2px 8px 0px black;
+          box-shadow: 0px 2px 8px 0px black;
+}
+
+header .navbar #header_icon {
+  width: 4%;
+  margin-left: 3%;
+}
+
+header .navbar #header_icon img {
+  width: 100%;
+}
+
+header .navbar .empty-nav-flex {
+  width: 4%;
+  margin-right: 3%;
 }
 
 header .navbar ul {
@@ -56,7 +66,7 @@ header .navbar .navbar-nav {
 }
 
 header .navbar .nav-item {
-  padding: 1% 2%;
+  padding: 6% 10%;
 }
 
 header .navbar a {
@@ -72,12 +82,12 @@ header .navbar a:visited {
 
 header .navbar .active a {
   font-weight: 800;
-  color: #7fd0d6;
+  color: #3fb3a7;
 }
 
 header .navbar li:hover {
   cursor: pointer;
-  background-color: rgba(127, 208, 214, 0.5);
+  background-color: rgba(63, 179, 167, 0.5);
   border-radius: 15% 15% 15% 15% / 50% 50% 50% 50%;
 }
 

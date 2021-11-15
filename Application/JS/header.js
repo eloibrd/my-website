@@ -13,7 +13,7 @@ function setActiveNavLink(id) {
 }
 
 // When the user scrolls the page, execute myFunction
-window.onscroll = function () { myFunction() };
+window.onscroll = function () { stickNavbar() };
 
 // Get the navbar
 var navbar = document.getElementsByClassName("navbar")[0];
@@ -22,11 +22,17 @@ var navbar = document.getElementsByClassName("navbar")[0];
 var sticky = navbar.offsetTop;
 
 // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
+function stickNavbar() {
+    var header_icon = document.getElementById("header_icon");
+    var header_icon_placerholder = document.getElementById("header_icon_placerholder");
     if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky")
+        navbar.classList.add("sticky");
+        header_icon.hidden = false;
+        header_icon_placerholder.hidden = true;
     } else {
         navbar.classList.remove("sticky");
+        header_icon.hidden = true;
+        header_icon_placerholder.hidden = false;
     }
 }
 
