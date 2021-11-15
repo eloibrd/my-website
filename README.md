@@ -1,17 +1,35 @@
 # My Portfolio
 
-Eloi Bernard
-
 v1 in progress
 
 ---
 
-## objectives
+## v1 objectives
 
-- #### _Front-End :_
+-   #### _Front-End :_
 
-Developping a Portfolio using native HTML/CSS and JS
+Developping a SPA Portfolio using native HTML/CSS and JS
 
 > tweak : I am using SCSS atm
 
+_**Parts : (WIP)**_
 
+-   [x] Header
+-   [ ] About me
+-   [ ] Projects
+-   [ ] Curriculum
+-   [ ] Contact info
+-   [ ] Footer
+-   ### _Back-End :_
+
+Thinking of using Dotnet core for the WebServices part
+
+_**Providing :**_
+
+-   [ ] Projects
+-   [ ] Experiences
+-   [ ] Curriculum
+
+---
+
+_**Eloi Bernard - Starting fall 2021**_

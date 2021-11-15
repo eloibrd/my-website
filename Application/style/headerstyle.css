@@ -1,22 +1,22 @@
 header {
   width: 100%;
-  background-image: url("../assets/header.png");
+  background-image: url("../assets/favicon.svg");
   background-position: left;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 17%;
   background-color: black;
 }
 
 header .title {
   width: 100%;
-  margin: 1% 0%;
+  margin: 2% 0%;
 }
 
 header .title .avatar {
   width: 10%;
   border-radius: 50%;
-  -webkit-box-shadow: 3px 4px 20px 2px rgba(63, 179, 167, 0.6);
-          box-shadow: 3px 4px 20px 2px rgba(63, 179, 167, 0.6);
+  -webkit-box-shadow: 3px 4px 20px 0px rgba(192, 43, 33, 0.6);
+          box-shadow: 3px 4px 20px 0px rgba(192, 43, 33, 0.6);
 }
 
 header .title .h1 {
@@ -30,30 +30,31 @@ header .sticky {
   background-color: black;
   position: fixed;
   top: 0;
+  left: 0;
+  z-index: 9999;
   width: 100%;
 }
 
 header .navbar {
   width: 100%;
-  padding: 1% 0%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-shadow: 0px 2px 8px 0px black;
-          box-shadow: 0px 2px 8px 0px black;
+  -webkit-box-shadow: 0px 10px 15px -10px black;
+          box-shadow: 0px 10px 15px -10px black;
 }
 
-header .navbar #header_icon {
-  width: 4%;
+header .navbar #header-icon {
+  width: 3%;
   margin-left: 3%;
 }
 
-header .navbar #header_icon img {
+header .navbar #header-icon img {
   width: 100%;
 }
 
 header .navbar .empty-nav-flex {
-  width: 4%;
+  width: 3%;
   margin-right: 3%;
 }
 
@@ -69,31 +70,35 @@ header .navbar .navbar-nav {
 
 header .navbar .nav-item {
   padding: 6% 10%;
+  white-space: nowrap;
+}
+
+header .navbar .nav-item:hover {
+  cursor: pointer;
+  border-bottom: 4px solid #e9c80c;
+}
+
+header .navbar .nav-item:hover li {
+  color: #e9c80c;
 }
 
 header .navbar a {
   color: aliceblue;
   text-decoration: none;
   font-size: 1.2em;
-  font-weight: 500;
+  font-weight: normal;
 }
 
 header .navbar a:visited {
   color: aliceblue;
 }
 
-header .navbar .active a {
-  font-weight: 800;
+header .navbar .active {
+  border-bottom: 4px solid #3fb3a7;
+}
+
+header .navbar .active li {
+  font-weight: bold;
   color: #3fb3a7;
-}
-
-header .navbar li:hover {
-  cursor: pointer;
-  background-color: rgba(63, 179, 167, 0.5);
-  border-radius: 15% 15% 15% 15% / 50% 50% 50% 50%;
-}
-
-header .navbar li:hover a {
-  color: black;
 }
 /*# sourceMappingURL=headerstyle.css.map */

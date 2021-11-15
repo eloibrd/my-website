@@ -19,20 +19,23 @@ window.onscroll = function () { stickNavbar() };
 var navbar = document.getElementsByClassName("navbar")[0];
 
 // Get the offset position of the navbar
-var sticky = navbar.offsetTop;
+var sticky = navbar.offsetTop + 50;
 
 // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function stickNavbar() {
-    var header_icon = document.getElementById("header_icon");
-    var header_icon_placerholder = document.getElementById("header_icon_placerholder");
+    var header_icon = document.getElementById("header-icon");
+    var header_icon_placerholder = document.getElementById("header-icon-placerholder");
+    var main_container = document.getElementById("main-container");
     if (window.pageYOffset >= sticky) {
         navbar.classList.add("sticky");
         header_icon.hidden = false;
         header_icon_placerholder.hidden = true;
+        main_container.style.paddingTop = "9%";
     } else {
         navbar.classList.remove("sticky");
         header_icon.hidden = true;
         header_icon_placerholder.hidden = false;
+        main_container.style.paddingTop = null;
     }
 }
 

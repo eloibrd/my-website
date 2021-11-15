@@ -32,7 +32,20 @@ body {
           justify-content: center;
 }
 
-.main-container {
-  margin: 3% 10%;
+#main-container {
+  margin: 5% 5%;
+}
+
+#main-container section {
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 5%;
+}
+
+#main-container section#aboutme {
+  background-color: aqua;
 }
 /*# sourceMappingURL=mainstyle.css.map */

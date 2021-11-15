@@ -16,6 +16,19 @@ body {
     justify-content: center;
 }
 
-.main-container {
-    margin: 3% 10%;
+#main-container {
+    margin: 5% 5%;
+    // margin-top: 12%;
+
+    section {
+        width: 100%;
+        height: 100vh;
+        margin-bottom: 5%;
+        box-sizing: border-box;
+        padding: 5%;
+    }
+
+    section#aboutme {
+        background-color: aqua;
+    }
 }
