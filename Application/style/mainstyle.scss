@@ -22,7 +22,7 @@ body {
 
     section {
         width: 100%;
-        height: 100vh;
+        height: calc(100vh - 52px); // 52 px pour la sticky navbar
         margin-bottom: 5%;
         box-sizing: border-box;
         padding: 5%;
@@ -31,4 +31,18 @@ body {
     section#aboutme {
         background-color: aqua;
     }
+    section#projects {
+        background-color: aqua;
+    }
+    section#curriculum {
+        background-color: aqua;
+    }
+    section#contactinfo {
+        background-color: aqua;
+    }
+}
+
+.padding_top {
+    // pour compenser la sticky navbar
+    padding-top: 53px;
 }

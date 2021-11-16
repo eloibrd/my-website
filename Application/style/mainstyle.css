@@ -38,7 +38,7 @@ body {
 
 #main-container section {
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 52px);
   margin-bottom: 5%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -47,5 +47,21 @@ body {
 
 #main-container section#aboutme {
   background-color: aqua;
+}
+
+#main-container section#projects {
+  background-color: aqua;
+}
+
+#main-container section#curriculum {
+  background-color: aqua;
+}
+
+#main-container section#contactinfo {
+  background-color: aqua;
+}
+
+.padding_top {
+  padding-top: 53px;
 }
 /*# sourceMappingURL=mainstyle.css.map */
