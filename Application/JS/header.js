@@ -28,17 +28,21 @@ function stickNavbar() {
     var main_container = document.getElementById("main-container");
     if (window.pageYOffset >= sticky) {
         navbar.classList.add("sticky");
+        // on affiche pas l'icon si on est sur mobile
         if (document.documentElement.clientWidth >= 601) {
             header_icon.hidden = false;
             header_icon_placerholder.hidden = true;
         }
+        // ajoute le padding pour compenser la fixation de la navbar
         main_container.classList.add("padding_top");
     } else {
         navbar.classList.remove("sticky");
+        // on affiche pas l'icon si on est sur mobile
         if (document.documentElement.clientWidth >= 601) {
             header_icon.hidden = true;
             header_icon_placerholder.hidden = false;
         }
+        // enlève le padding qui compense la fixation de la navbar
         main_container.classList.remove("padding_top");
     }
 }

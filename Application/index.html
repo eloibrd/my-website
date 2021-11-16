@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Eloi Bernard</title>
-        <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="assets/avatar.svg" type="image/x-icon">
         <link rel="stylesheet" href="style/headerstyle.css">
         <link rel="stylesheet" href="style/mainstyle.css">
 
@@ -23,8 +23,8 @@
                 </div>
                 <nav class="navbar">
                     <div class="flex-inline-container">
-                        <a hidden id="header-icon" href="#top">
-                            <img src="assets/favicon.svg" alt="">
+                        <a hidden id="header-icon">
+                            <img src="assets/avatar.svg" alt="">
                         </a>
                         <div id="header-icon-placerholder" class="empty-nav-flex"></div>
                         <ul class="navbar-nav flex-inline-container">
@@ -54,6 +54,15 @@
                 </nav>
             </div>
         </header>
+
+        <!-- fixed top of page arrow, source : https://freefrontend.com/css-arrows/#back-to-top-arrows -->
+        <div class="fixed-top-arrow" id="top-arrow-placeholder" hidden>
+            <a class="arrow-up fixed-top-arrow" href="#top">
+                <span class="left-arm"></span>
+                <span class="right-arm"></span>
+                <span class="arrow-slide"></span>
+            </a>
+        </div>
 
         <div id="main-container">
 
