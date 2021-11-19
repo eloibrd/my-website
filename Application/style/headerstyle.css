@@ -113,13 +113,14 @@ header .navbar .nav-item {
   border-bottom: 4px solid black;
 }
 
-header .navbar .nav-item:hover {
-  cursor: pointer;
-  border-bottom: 4px solid #e9c80c;
-}
-
-header .navbar .nav-item:hover li {
-  color: #e9c80c;
+@media screen and (min-width: 601px) {
+  header .navbar .nav-item:hover {
+    cursor: pointer;
+    border-bottom: 4px solid #e9c80c;
+  }
+  header .navbar .nav-item:hover li {
+    color: #e9c80c;
+  }
 }
 
 header .navbar a {
