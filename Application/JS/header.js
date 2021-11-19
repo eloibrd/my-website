@@ -1,26 +1,3 @@
-/**
- * Met à jour l'élément de navigation actif
- * @param {String} id l'id du nav-item qui devient actif
- */
-function setActiveNavLink(id) {
-    var activeNavLink = document.getElementsByClassName("nav-item active")[0];
-    activeNavLink.classList.remove('active');
-    var newActiveNavLink = document.getElementById(id);
-    newActiveNavLink.classList.add('active');
-}
-
-/**
- * Charge le changement d'élément actif sur les éléments de la navbar
- */
-function initNavbar() {
-    var nav_items = document.getElementsByClassName("nav-item");
-    Array.from(nav_items).forEach(nav_item => {
-        nav_item.addEventListener("click", () => { setActiveNavLink(nav_item.id); });
-    });
-}
-
-initNavbar();
-
 // trouver la navbar
 var navbar = document.getElementsByClassName("navbar")[0];
 // récupérer l'offset haut de la navbar
@@ -56,4 +33,26 @@ function stickNavbar() {
         main_container.classList.remove("padding_top");
     }
 }
+
+const sections = document.querySelectorAll("section");
+const navItems = document.getElementsByClassName("nav-item");
+/**
+ * Met à jour l'élément de navigation actif lors du scroll
+ */
+function changeActiveOnScroll() {
+    var current = "";
+    sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        if (window.pageYOffset >= sectionTop - 52) {
+            current = section.getAttribute("id");
+        }
+    });
+
+    Array.prototype.forEach.call(navItems, (item) => {
+        item.classList.remove("active");
+        if (item.classList.contains(current)) {
+            item.classList.add("active");
+        }
+    });
+};
 
